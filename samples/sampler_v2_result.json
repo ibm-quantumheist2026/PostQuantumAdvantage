@@ -1,0 +1,18 @@
+{
+  "backend_name": "ibm_osaka",
+  "job_id": "sampler-v2-abc123",
+  "status": "COMPLETED",
+  "success": true,
+  "date": "2026-02-20T10:05:00Z",
+  "quasi_dists": [
+    {
+      "00": 0.498,
+      "11": 0.502
+    }
+  ],
+  "metadata": {
+    "backend_name": "ibm_osaka",
+    "shots": 8192,
+    "execution_time": 8.91
+  }
+}
