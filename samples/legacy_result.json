@@ -1,0 +1,29 @@
+{
+  "backend_name": "ibm_brisbane",
+  "job_id": "ct4k8x7gqbc00080f5pg",
+  "status": "COMPLETED",
+  "success": true,
+  "date": "2026-02-19T22:14:03Z",
+  "shots": 4096,
+  "time_taken": 12.34,
+  "results": [
+    {
+      "header": {
+        "name": "bell_state_circuit"
+      },
+      "shots": 4096,
+      "status": "DONE",
+      "data": {
+        "counts": {
+          "0x0": 2018,
+          "0x3": 2078
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "backend_name": "ibm_brisbane",
+    "shots": 4096,
+    "execution_time": 12.34
+  }
+}
