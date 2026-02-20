@@ -1,0 +1,12 @@
+{
+  "mode": "dry_run",
+  "backend": "ibm_torino",
+  "shots": 8192,
+  "script_path": "/home/dnalang/.osiris/quantum/deploy_ibm_torino.py",
+  "script_sha256": "12db5be0fe5a749dc2dc4f49be5604ca72dde85d564a6e95c622702b1755b9ad",
+  "created_at_unix": 1766693659,
+  "env": {
+    "QISKIT_IBM_TOKEN": "MISSING",
+    "IBM_QUANTUM_TOKEN": "MISSING"
+  }
+}

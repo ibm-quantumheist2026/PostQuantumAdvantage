@@ -1,0 +1,88 @@
+{
+  "manifest_version": "dna-lang-quantum/v2.0.0",
+  "experiment": "AETERNA_PORTA_V2",
+  "protocol": "Quantum Zeno Stabilized Wormhole",
+  "framework": "dna::}{::lang v51.843",
+  "timestamp_created": "2025-12-26T00:00:00Z",
+  "author": {
+    "name": "Devin Phillip Davis",
+    "affiliation": "Agile Defense Systems, LLC",
+    "cage_code": "9HUP5"
+  },
+  "hardware": {
+    "backend": "ibm_nighthawk",
+    "fallback_backends": ["ibm_fez", "ibm_torino", "ibm_brisbane"],
+    "qubits": 120,
+    "topology": "heavy-hex",
+    "ff_latency_ns": 300
+  },
+  "configuration": {
+    "partition": {
+      "n_L": 50,
+      "n_R": 50,
+      "n_anc": 20,
+      "total": 120
+    },
+    "zeno": {
+      "frequency_hz": 1000000,
+      "coupling_strength": 0.1,
+      "cycles": 100
+    },
+    "floquet": {
+      "drive_frequency_hz": 1000000000,
+      "drive_amplitude_rad": 0.5,
+      "timesteps": 10
+    },
+    "feed_forward": {
+      "latency_target_ns": 300,
+      "correction_gates": ["x", "rz"]
+    },
+    "shots": 100000
+  },
+  "constants": {
+    "LAMBDA_PHI": 2.176435e-08,
+    "THETA_LOCK_DEG": 51.843,
+    "THETA_PC_RAD": 2.2368,
+    "PHI_THRESHOLD": 0.7734,
+    "GAMMA_CRITICAL": 0.3,
+    "CHI_PC": 0.946
+  },
+  "ccce_metrics": {
+    "phi_consciousness": {
+      "baseline": 0.78,
+      "target": 0.842,
+      "threshold": 0.7734
+    },
+    "lambda_coherence": {
+      "baseline": 0.84,
+      "target": 0.946
+    },
+    "gamma_decoherence": {
+      "baseline": 0.092,
+      "target": 0.082,
+      "critical_threshold": 0.3
+    },
+    "xi_efficiency": {
+      "baseline": 3.6,
+      "target": 127.4,
+      "formula": "(lambda × phi) / gamma"
+    }
+  },
+  "deployment": {
+    "status": "ready",
+    "all_bugs_fixed": true,
+    "partition_corrected": "L=50, R=50, Anc=20 (total: 120)",
+    "backend_fallback_added": true,
+    "session_api_updated": true,
+    "indentation_fixed": true,
+    "credentials_required": "QISKIT_IBM_TOKEN",
+    "command": "python3 ~/.osiris/quantum/deploy_aeterna_porta_v2_ibm_nighthawk.py",
+    "quick_deploy": "~/.osiris/quantum/QUICK_DEPLOY.sh"
+  },
+  "provenance": {
+    "platform": "dna-lang v51.843",
+    "axiom": "U := L[U]",
+    "lambda_phi_constant": "2.176435e-08",
+    "theta_lock": "51.843"
+  }
+}

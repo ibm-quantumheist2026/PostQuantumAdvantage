@@ -1,0 +1,34 @@
+{
+  "manifest_version": "aeterna-porta-v2/pcrb/1.0.0",
+  "fields": {
+    "ts_unix": "timestamp",
+    "backend_id": "string",
+    "n_qubits": "int",
+    "depth": "int",
+    "optimization_level": 3,
+    "routing_method": "sabre",
+    "qwc": true,
+    "params": {
+      "kappa": "float (Zeno frequency)",
+      "A": "float (Floquet amplitude)",
+      "omega": "float (Floquet frequency)",
+      "Gamma": "float (dissipation)",
+      "beta_i": "array (TFD angles)"
+    },
+    "primitives": ["SamplerV2"],
+    "shots": "int",
+    "mitigation_config": "dict",
+    "observables": {
+      "F_tel": "float",
+      "delta_t_recon": "float",
+      "S_2_A": "float",
+      "J_nonrecip": "float",
+      "W_2": "float"
+    },
+    "hashes": {
+      "raw_counts": "sha256",
+      "shadow_moments": "sha256",
+      "chain_hash": "sha256"
+    }
+  }
+}

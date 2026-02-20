@@ -1,0 +1,43 @@
+{
+  "manifest_version": "aeterna-porta-ignition/v2.1.0",
+  "experiment": "AETERNA-PORTA v2.1 IGNITION",
+  "backend": "ibm_fez",
+  "qubits": 120,
+  "partition": {
+    "L": 50,
+    "R": 50,
+    "Anc": 20
+  },
+  "shots": 100000,
+  "parameters": {
+    "drive_amplitude": 0.7734,
+    "zeno_freq_hz": 1250000.0,
+    "floquet_freq_hz": 1000000000.0,
+    "ff_latency_ns": 300.0
+  },
+  "constants": {
+    "LAMBDA_PHI": 2.176435e-08,
+    "THETA_LOCK": 51.843,
+    "THETA_PC_RAD": 2.2368,
+    "GAMMA_CRITICAL": 0.3,
+    "PHI_THRESHOLD": 0.7734,
+    "CHI_PC": 0.946
+  },
+  "circuit": {
+    "depth_original": 20,
+    "depth_compiled": 43,
+    "size": 1050,
+    "gates": {
+      "measure": 150,
+      "ry": 100,
+      "rz": 100,
+      "h": 50,
+      "cx": 50,
+      "cry": 20,
+      "reset": 20,
+      "if_else": 10,
+      "barrier": 5
+    }
+  },
+  "timestamp_pre": 1766781084.2410972
+}

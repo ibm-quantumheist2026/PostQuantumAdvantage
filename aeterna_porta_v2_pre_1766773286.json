@@ -1,0 +1,17 @@
+{
+  "manifest_version": "aeterna-porta-v2/1.0.0",
+  "backend": "ibm_torino",
+  "qubits": 120,
+  "shots": 100000,
+  "zeno_freq": 1000000.0,
+  "ff_latency_ns": 300.0,
+  "circuit_depth": 55,
+  "circuit_size": 1062,
+  "constants": {
+    "LAMBDA_PHI": 2.176435e-08,
+    "THETA_LOCK": 51.843,
+    "GAMMA_CRITICAL": 0.3,
+    "PHI_THRESHOLD": 0.7734
+  },
+  "timestamp_pre": 1766773286.2625527
+}
