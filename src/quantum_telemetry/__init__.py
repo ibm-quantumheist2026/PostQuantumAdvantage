@@ -30,6 +30,14 @@ from quantum_telemetry.energy import (
 )
 from quantum_telemetry.parser import extract_execution_state, extract_measurements, parse_result
 from quantum_telemetry.visualizer import plot_measurement_counts
+from quantum_telemetry.pqc import (
+    compute_counts_hash,
+    compute_shadow_moments_hash,
+    compute_chain_hash,
+    compute_pcrb_hashes,
+    verify_pcrb_hashes,
+)
+from quantum_telemetry.ga4gh import compute_digest, compute_vrs_id, annotate_result
 
 __all__ = [
     # parser
@@ -67,4 +75,14 @@ __all__ = [
     "EdgeNode",
     "build_default_node",
     "detect_runtime",
+    # PQC hash-chain integrity
+    "compute_counts_hash",
+    "compute_shadow_moments_hash",
+    "compute_chain_hash",
+    "compute_pcrb_hashes",
+    "verify_pcrb_hashes",
+    # GA4GH VRS identifiers
+    "compute_digest",
+    "compute_vrs_id",
+    "annotate_result",
 ]
